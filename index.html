@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jamal Salama - Portfolio</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Jamal Salama
+          <div class="contact_info">
+            <img src="/html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          salamaaccoumt@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +212 636035661
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Slills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      
+      <div>
+        <img src="IMG_20250110_001603 (1).jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Jamal Salama! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+I’m a passionate full-stack developer with [X years] of experience building robust applications and scalable microservices. My expertise spans both the application and presentation layers, allowing me to deliver end-to-end solutions that are both functional and user-friendly.
+
+I’ve had the opportunity to work with cutting-edge technologies, including cloud platforms like IBM Cloud, where I’ve deployed and managed applications and microservices. I’m particularly skilled in leveraging IBM Watson Services, having worked extensively with tools like Watson Assistant, Natural Language Understanding (NLU), and Sentiment Analyzer to create intelligent, AI-driven solutions.
+
+Whether it’s crafting seamless user experiences or solving complex backend challenges, I thrive on turning ideas into reality through clean, efficient, and innovative code. Let’s build something amazing together!
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="all_skills">
+          <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>2 years experience</p>
+          </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>one year experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Healthcare Virtual Assistant</h3>
+            <ul>
+              <li>Developed a virtual assistant for a healthcare provider using IBM Watson Assistant and Node.js. The chatbot assisted patients in scheduling appointments, finding doctors, and accessing medical information. Integrated with the client’s existing CRM system to ensure data accuracy and streamline operations.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Food Delivery Chatbot</h3>
+            <ul>
+              <li>Created a chatbot for a food delivery service to handle order placements, track deliveries, and provide restaurant recommendations. Used IBM Watson Assistant for conversational AI and integrated it with Stripe for payments and Google Maps API for delivery tracking. The chatbot improved order accuracy and reduced customer wait times.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>
+              Real Estate Virtual Assistant</h3>
+            <ul>
+              <li>Developed a virtual assistant for a real estate agency to help users search for properties, schedule viewings, and get mortgage advice. Integrated IBM Watson Assistant with a React.js front end and a Firebase backend for real-time data updates. The assistant increased lead generation by 20%.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Jamal is an incredibly talented developer with a sharp eye for detail. 
+          They quickly grasp complex technical concepts and apply them effectively in their work. 
+          Their proactive attitude and collaborative nature make them a valuable asset to any team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Jamal has been a pleasure.
+           They have a deep understanding of both front-end and back-end development,and their ability to deliver high-quality solutions is impressive.
+             Their curiosity and willingness to ask the right questions drive innovation within the team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Jamal is a natural problem-solver and a fast learner. 
+          They consistently take initiative and go above and beyond to ensure projects are successful. 
+          Their leadership potential is evident, and I have no doubt they will excel in guiding teams in the future.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
